@@ -1,0 +1,70 @@
+import java.util.Scanner;
+public class loop 
+{
+    public static void main(String args[])
+        {
+            System.out.println("Printing a rectange made of Stars (*)");
+            Scanner sc = new Scanner(System.in);
+            System.out.println(" Enter any number : ");
+            int n = sc.nextInt();
+            for(int i=1;i<=n;i++)
+            {
+                for(int j=1;j<=n;j++)
+                {
+                    System.out.print(" * ");
+                }
+                System.out.println();
+            }
+            System.out.println("Printing a right angle triangle made of Stars (*)");
+            System.out.println(" Enter any number : ");
+            int m = sc.nextInt();
+            for(int i=1;i<=m;i++)
+            {
+                for(int j=1;j<=i;j++)
+                {
+                    System.out.print(" * ");
+                }
+                System.out.println();
+            }
+             System.out.println("Printing a hollow rectangle made of Stars (*)");
+            System.out.println(" Enter any two numbers : ");
+            int a = sc.nextInt();
+            int b = sc.nextInt();
+
+            for(int i=1;i<=a;i++)
+            {
+                for(int j=1;j<=b;j++)
+                {
+                    if(i==1||j==1||i==a||j==b)
+                    {
+                        System.out.print(" * ");
+                    }
+                    else
+                    {
+                        System.out.print("   ");
+                    }
+                }
+                System.out.println();
+            }
+            System.out.println("Printing a triangle made of Stars (*)");
+            System.out.println(" Enter any number : ");
+            int c = sc.nextInt();
+            for(int i=1;i<=c;i++)
+            {
+                for(int j=1;j<=c-i;j++)
+                {
+                    System.out.print("   ");
+                }
+                for(int j=1;j<=i;j++)
+                {
+                    System.out.print(" * ");
+                }
+                for(int j=1;j<=i-1;j++)
+                {
+                    System.out.print(" * ");
+                }
+                System.out.println();
+            }
+            sc.close();
+        }
+}
