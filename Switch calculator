@@ -1,0 +1,40 @@
+import java.util.*;
+class Switch_Calculator
+{
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println(" Enter any two numbers : ");
+        float a = sc.nextFloat();
+        float b = sc.nextFloat();
+        System.out.println(" 1. Addition : ");
+        System.out.println(" 2. Subtract : ");
+        System.out.println(" 3. Multiply : ");
+        System.out.println(" 4. Division : ");
+        System.out.println(" 5. Modulus : ");
+        System.out.println(" Choose required option : ");
+        int n = sc.nextInt();
+        switch(n)
+        {
+            case 1 :
+                System.out.println("Addition: " + (a+b));
+                break;
+            case 2 :
+                System.out.println("Subtract: " + (a-b));
+                break;
+            case 3 :
+                System.out.println("Multiply: " + (a*b));
+                break;
+            case 4 :
+                System.out.println("Division: " + (a/b));
+                break;
+            case 5 :
+                System.out.println("Modulus: " + (a%b));
+                break;
+            default :
+                System.out.println("Wrong Option");
+                break;
+        }
+        sc.close();
+    }
+}
